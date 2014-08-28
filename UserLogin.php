@@ -9,48 +9,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>User Login</title>
 	<link href="stylesheet/UserLogin.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
-	#apDiv1 {
-	position: absolute;
-	left: 88px;
-	top: 508px;
-	width: 51px;
-	height: 23px;
-	z-index: 2;
-}
-    #apDiv2 {
-	position: absolute;
-	left: 80px;
-	top: 533px;
-	width: 0px;
-	height: 8px;
-	z-index: 2;
-}
-    #apDiv3 {
-	position: absolute;
-	left: 45%;
-	top: 566px;
-	width: 10%;
-	height: 31px;
-	z-index: 3;
-}
-    </style>
+
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-#apDiv4 {
-	position: absolute;
-	left: 26%;
-	top: 653px;
-	width: 40%;
-	height: 88px;
-	z-index: 4;
-	border-top-width: thin;
-	border-top-style: solid;
-	border-top-color: rgba(51,51,51,1);
-	text-align: right;
-	color: rgba(0,153,255,1);
-}
-</style>
+
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
@@ -62,15 +23,15 @@
 <div id="apDiv2"></div>
 <div id="apDiv3">
   <ul id="MenuBar2" class="MenuBarVertical">
-<li><a class="MenuBarItemSubmenu" href="#">Sign Up</a>
+	<li><a class="MenuBarItemSubmenu" href="#">Sign Up</a>
       <ul>
         <li><a href="#">Sign Up as a Doctor</a></li>
-<li><a href="#">Sign Up as a Patient</a></li>
+		<li><a href="SignUpasPatient.html">Sign Up as a Patient</a></li>
       </ul>
     </li>
   </ul>
 </div>
-<div id="apDiv4">Copy right:CUET	Contact  About the developer	</div>
+<div id="contact_ifo">Copy right:CUET Contact   About the    developer	</div>
 <form >
 	<table border="0">
         	        
