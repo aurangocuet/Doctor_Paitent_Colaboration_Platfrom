@@ -1,0 +1,137 @@
+#label {
+	position: absolute;
+	left: 27%;
+	top: 20px;
+	width: 45%;
+	height: 193px;
+	z-index: 1;
+}
+
+a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+}
+
+a:link {
+	color:#333;
+	text-decoration:none;
+}
+a:visited {
+	color:#333;
+	text-decoration:none;
+}
+a:hover {
+	color:#09F;
+	text-decoration:none;
+}
+a:active {
+	color:#333;
+	text-decoration:none;
+}
+
+.WantSignUp {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	width:200px;
+	padding:30px;
+	margin:auto;
+	text-align:center;
+}
+
+form {
+	margin-top:250px;
+	margin-left:26%;
+	margin-right:26%;
+	width:500px;
+	background-color:#90A4AB;
+	padding:10px;
+	border:0px;
+	border-radius:0px;
+	-moz-box-shadow:    6px 6px 9px 2px #ABABAB;
+ 	 -webkit-box-shadow: 6px 6px 9px 2px #ABABAB;
+ 	 box-shadow:         6px 6px 9px 2px #ABABAB;
+	 border:0px;
+	 border-radius:10px;
+	
+}
+
+table {
+	width:500px;
+}
+tr {
+	width:500px;
+}
+td {
+	
+	width:240px;
+	padding:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#fff;
+	
+}
+tr td:nth-child(2) {
+	width:230px;
+	padding-left:10px;
+	padding-right:10px;
+	
+	text-align:left;
+}
+tr td:nth-child(1) {
+	width:230px;
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:bold;
+	text-align:right;
+}
+.FormElement {
+	width:200px;
+	height:30px;
+	padding:5px;
+	border:1px solid #ccc;
+	border-radius:5px;
+
+}
+
+.button {
+	border:0;
+	padding:8px;
+	width:auto;
+	background-color:#333;
+	cursor:pointer;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#fff;
+	margin:auto;
+	font-weight:bold;
+	-webkit-transition:background-color .35s  linear;
+	-moz-transition:background-color .35s linear;
+	-o-transition:background-color .35s linear;
+	transition:background-color .35s linear;
+}
+.button:hover {
+	background-color:#09F;
+}
+
+input, select {
+	-webkit-transition: background-color 0.5s linear;
+	-moz-transition: background-color 0.5s linear;
+	-o-transition: background-color 0.5s linear;
+	-ms-transition: background-color 0.5s linear;
+	transition: background-color 0.5s linear;
+}
+input:focus, select:focus{
+	background-color:#32525D;
+	color:#fff;
+
+}
+
+hr {
+	margin-right:0%;
+	alignment-adjust:baseline;
+	alignment-baseline:central;
+	margin-left:0%;
+	width:82%;
+}
