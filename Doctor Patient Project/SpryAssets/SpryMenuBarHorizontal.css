@@ -15,6 +15,7 @@ ul.MenuBarHorizontal
 {
 	margin: 0;
 	padding: 0;
+	/*padding-left:5px;*/
 	list-style-type: none;
 	font-size: 100%;
 	cursor: default;
@@ -29,7 +30,10 @@ ul.MenuBarActive
 ul.MenuBarHorizontal li
 {
 	margin: 0;
-	padding: 0;
+	padding-left: 0;
+	padding-right: 5px;
+	padding-bottom:0;
+	padding-top:0;
 	list-style-type: none;
 	font-size: 100%;
 	position: relative;
@@ -59,7 +63,7 @@ ul.MenuBarHorizontal ul.MenuBarSubmenuVisible
 /* Menu item containers are same fixed width as parent */
 ul.MenuBarHorizontal ul li
 {
-	width: 8.2em;
+	width: 7em;
 }
 /* Submenus should appear slightly overlapping to the right (95%) and up (-5%) */
 ul.MenuBarHorizontal ul ul
@@ -90,10 +94,13 @@ ul.MenuBarHorizontal a
 {
 	display: block;
 	cursor: pointer;
-	background-color: #EEE;
+	background-color: #CCC;
 	padding: 0.5em 0.75em;
 	color: #333;
 	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 10px;
 }
 /* Menu items that have mouse over or focus have a blue background and white text */
 ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
