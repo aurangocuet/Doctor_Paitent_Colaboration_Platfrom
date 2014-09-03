@@ -40,6 +40,10 @@
 		$district = mysqli_real_escape_string($con, $_POST['district']);
 		$password = mysqli_real_escape_string($con, $_POST['password']);
 		$re_password = mysqli_real_escape_string($con, $_POST['re_password']);
+		echo "$_POST[sex]";
+		echo "$_POST[country]";
+		echo "$sex";
+		echo "$country";
 		//Ceck Two password matches or not
 		if($password!=$re_password)
 			echo "Password doesn't match";
