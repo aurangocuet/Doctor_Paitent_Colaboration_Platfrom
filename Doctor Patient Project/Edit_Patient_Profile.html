@@ -7,8 +7,10 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>SignUp as Patient</title>
-<link href="stylesheet/SignUpasPaitent.css" rel="stylesheet" type="text/css">
+	<title>Edit Patient Profile</title>
+<link href="stylesheet/Edit_profile_patient.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
 <body bgcolor="#FFFFFF">
@@ -18,25 +20,31 @@
 </div>
 <div id="apDiv2"></div>
 <div id="contact_ifo">Copy right:CUET Contact   About the    developer	</div>
-<form action="SignUpasPatient.php" method="post">
+<div id="nav">
+  <ul id="navigationpanel" class="MenuBarHorizontal">
+    <li><a href="hme.php">Home</a></li>
+    <li><a href="#">Find a Doctor</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="UserLogin.html">Log Out</a></li>
+  </ul>
+</div>
+
+<form action="Edit_Profile_patient.php" method="post">
 	<table border="0">
         	        
             <tr>
             	<td>Name</td>
-   				<td><input type="text" name="username" class="FormElement" maxlength="45" required></td>
-            </tr>
-   			<tr>
-            	<td>Email adress</td>
-   				<td><input type="email" name="email" class="FormElement" maxlength="45" required></td>
+   				<td><input type="text" name="patient_name" class="FormElement" maxlength="45"></td>
             </tr>
             <tr>
             	<td>Age</td>
-   				<td><input type="number" name="age" class="FormElement" maxlength="45" required></td>
+   				<td><input type="number" name="age" class="FormElement" maxlength="45"></td>
             </tr>
             <tr>
             	<td>Sex</td>
    				<td>  
-                	<select name="sex" id="sex" class="FormElement" maxlength="45" required>
+                	<select name="sex" id="sex" class="FormElement" maxlength="45" >
                     	<option value="Male" selected >Male</option>
                         <option value="Female">Female</option>
                     </select>
@@ -45,7 +53,7 @@
             <tr>
             	<td>Select Country</td>
    				<td>
-                	<select name="Country" id="Country" class="FormElement" maxlength="45" required>
+                	<select name="country" id="country" class="FormElement" maxlength="45" >
                     	<option value="Bangladesh" selected >Bangladesh</option>
                     </select>
                  </td>
@@ -53,7 +61,7 @@
             <tr>
             	<td>Select District</td>
    				<td>
-                	<select name="district" id="district" class="FormElement" maxlength="45" required>
+                	<select name="district" id="district" class="FormElement" maxlength="45" >
                     	<option value="Dhaka" selected >Dhaka</option>
                         <option value="Chittagong">Chittagong</option>
                         <option value="Khulna">Khulna</option>
@@ -64,21 +72,25 @@
                     </select>
                 </td>
             </tr>
+            <tr>
+            	<td>Old Password</td>
+    			<td><input type="password" name="old_password" class="FormElement" maxlength="45" required></td>
+            </tr>
       <tr>
-            	<td>Password</td>
-    			<td><input type="password" name="password" class="FormElement" maxlength="45" required></td>
+            	<td>New Password</td>
+    			<td><input type="password" name="new_password" class="FormElement" maxlength="45"></td>
             </tr>
             
            <tr>
             	<td>Re Enter Password</td>
-   				<td><input type="password" name="re_password" class="FormElement" maxlength="45" required></td>
+   				<td><input type="password" name="re_new_password" class="FormElement" maxlength="45"></td>
       </tr>
             
       <tr>
             	<td>
                 </td>
                 <td>
-                  	<input type="submit" value="submit" class="button">
+                  	<input type="submit" value="Save" class="button">
                 </td>
             </tr>
   </table>
