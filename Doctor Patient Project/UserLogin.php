@@ -1,22 +1,7 @@
-<!--Name: Nazmul Islam
-	Institution: CUET,Cittagong,Bangladesh
-	Dept.CSE
-	Level:3
-	Term:1
--->
 <?php
 	session_start();
-	$user = "web";
-	$password = "1234";
-	$databases_name= "project31";
-	$con=mysqli_connect("localhost",$user,$password,$databases_name);
-	// Check connection
-	if (mysqli_connect_errno()) 
-	{
-  		echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-	//else
-		//echo "Connection Successful.<br><br>";
+	include ("Connection.php");
+	$con=Connection::getConnection();
 	$email = mysql_real_escape_string($_POST['email']);
 	$password = mysql_real_escape_string($_POST['password']);
 	
@@ -32,37 +17,18 @@
 	$query_num_row = mysqli_num_rows($result);
 	if($query_num_row==1)
 	{
-		//$name = mysqli_re($result,0,'name');
-		//echo "Welcome $name";
-		/*echo "<table border='1'>
-		<tr>
-		<th>Name</th>
-		<th>Email</th>
-		<th>Age</th>
-		<th>Sex</th>
-		<th>Country</th>
-		<th>District</th>
-		<th>Passsword</th>
-		</tr>";*/
 		
-		//$user_id = mysql_result($result,0,'email');
-		//$_SESSON['user_id'] = $user_id;
-		//header ('Location: hme.php'); 
-		/*$row = mysqli_fetch_array($result);
-		$name = $row['name'];
-		echo "Welcom $name";
-  		echo "<tr>";
-  		echo "<td>" . $row['name'] . "</td>";
-		echo "Welcome ".$row['name']." ";
-  		echo "<td>" . $row['email'] . "</td>";
-		echo "<td>" . $row['age'] . "</td>";
-  		echo "<td>" . $row['sex'] . "</td>";
-		echo "<td>" . $row['country'] . "</td>";
-  		echo "<td>" . $row['district'] . "</td>";
-		echo "<td>" . $row['password'] . "</td>";
-  		echo "</tr>";
+		$row = mysqli_fetch_array($result);
+	
+		$_SESSION['patient_email'] =    $row['email'];
+		$_SESSION['patient_name'] =    $row['name'];
+		$_SESSION['patient_age'] =      $row['age'];
+		$_SESSION['patient_sex'] =     $row['sex'];
+		$_SESSION['patient_district'] = $row['district'];
+		$_SESSION['patient_country'] = $row['country'];
+		$_SESSION['patient_password'] = $row['password'];
 		
-		echo "</table>";*/
+		header('Location: hme.php'); 
 	}
 	else
 	{

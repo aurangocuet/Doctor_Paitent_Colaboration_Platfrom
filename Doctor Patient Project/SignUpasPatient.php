@@ -1,9 +1,9 @@
 <?php
 include("Connection.php");
 include("SQLOperation.php");
+include("TableCreator.php");
 $con=Connection::getConnection();
-$operation=new SQLOperation();
-$operation->createTablePatient();
+$table=TableCreator::createTablePatient();
 $array=array();
 		$array['name'] = mysqli_real_escape_string($con, $_POST['username']);
 		$array['email'] = mysqli_real_escape_string($con, $_POST['email']);
@@ -17,6 +17,6 @@ $array=array();
 			echo "Password doesn't match";
 		else
 		{
-			$operation->insertIntoTable("patient",$array);
+			$operation=SQLOperation::insertIntoTable("patient",$array);
 	    }
 ?>

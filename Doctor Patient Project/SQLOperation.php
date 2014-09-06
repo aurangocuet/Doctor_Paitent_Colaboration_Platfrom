@@ -1,25 +1,11 @@
+<!-- Aurangajeb Alam Sabbir --!>
+
 <?php
 require_once 'Connection.php';
 $con=null;
 class SQLOperation{	
-	public function createTablePatient(){
-		 $con=Connection::getConnection();
-		 $create_table="CREATE TABLE IF NOT EXISTS patient(
-		            name VARCHAR(30),
-					email VARCHAR(30) PRIMARY KEY,
-					age int,
-					sex CHAR(10),
-					country VARCHAR(10),
-					district VARCHAR(10),
-					password VARCHAR(20))";
-
-	  // Execute query
-	  if (!mysqli_query($con,$create_table))
-		 echo "Error creating table: " . mysqli_error($con);
-	 }
 	 
-	 
-	 public function insertIntoTable($table_name,$array)
+	 public static function insertIntoTable($table_name,$array)
 	 {
 		 $con=Connection::getConnection();
 		 require('StringBuilder.php');
