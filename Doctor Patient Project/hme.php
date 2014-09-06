@@ -7,15 +7,8 @@
 
 <?php
 	session_start();
-	$user = "web";
-	$password = "1234";
-	$databases_name= "project31";
-	$con=mysqli_connect("localhost",$user,$password,$databases_name);
-	// Check connection
-	if (mysqli_connect_errno()) 
-	{
-  		echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	}
+	include ("Connection.php");
+	$con=Connection::getConnection();
 ?>
 
 <head>
