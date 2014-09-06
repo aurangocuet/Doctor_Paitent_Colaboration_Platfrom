@@ -1,15 +1,7 @@
 <?php 
 	session_start();
-	$user = "web";
-	$password = "1234";
-	$databases_name= "project31";
-	$con=mysqli_connect("localhost",$user,$password,$databases_name);
-	// Check connection
-	if (mysqli_connect_errno()) 
-	{
-  		echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-	
+	include ("Connection.php");
+	$con=Connection::getConnection();
 	$_password; $age; $name; $sex; $district; $new_password; $re_new_password;
 	
 	$_password = mysql_real_escape_string($_POST['old_password']);
