@@ -5,6 +5,11 @@
 require_once 'Connection.php';
 $con=Connection::getConnection();
 
+/*TableCreator::createTablePatient();
+TableCreator::createTableDoctor();
+TableCreator::createTableDoctor_location();
+TableCreator::createTableDoctor_description();*/
+
 	class TableCreator{
 		public static function createTablePatient(){
 		 $con=Connection::getConnection();
