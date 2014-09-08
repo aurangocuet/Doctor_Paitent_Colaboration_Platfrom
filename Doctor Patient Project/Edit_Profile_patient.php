@@ -8,44 +8,46 @@
 	
 	if($_password==$_SESSION['patient_password'])
 	{
-		//if(isset($_POST['patient_name']))
-			$name = mysqli_real_escape_string($con,$_POST['patient_name']);
+		if(!empty($_POST['patient_name']))
+		{	$name = mysqli_real_escape_string($con,$_POST['patient_name']);
 			echo "$name<br>";
-		//else
-			//$name = $_SESSION['patient_name'];
+		}
+		else
+			$name = $_SESSION['patient_name'];
 			
-		//if(isset($_POST['age']))
-			$age = mysqli_real_escape_string($con,$_POST['age']);
+		if(!empty($_POST['age']))
+		{	$age = mysqli_real_escape_string($con,$_POST['age']);
 			echo "$age<br>";
-		//else
-			//$age = $_SESSION['patient_age'];
+		}
+		else
+			$age = $_SESSION['patient_age'];
 			
-		//if(isset($_POST['sex']))
+		if(!empty($_POST['sex'])){
 			$sex = mysqli_real_escape_string($con,$_POST['sex']);
-			echo "$sex<br>";
-		//else
-			//$sex = $_SESSION['patient_sex'];
+			echo "$sex<br>";}
+		else
+			$sex = $_SESSION['patient_sex'];
 			
-		//if(isset($_POST['district']))
+		if(!empty($_POST['district'])){
 			$district = mysqli_real_escape_string($con,$_POST['district']);
-			echo "$district<br>";
-		//else
-			//$district = $_SESSION['patient_district'];
+			echo "$district<br>";}
+		else
+			$district = $_SESSION['patient_district'];
 			
-		//if(isset($_POST['new_password']))
-		//{
-			//$new_password = mysqli_real_escape_string($_POST['new_password']);
-			//$re_new_password = mysqli_real_escape_string($_POST['re_new_password']);
-			//if($new_password==$re_new_password)
-			//{
-			//	$_password=$new_password;
-			//}
-			//else
-			//{
-			//	echo "Two New Passwords Doesn't Match!";
-			//	header('Location: Edit_Patient_Profile.html');
-			//}
-		//}
+		if(!empty($_POST['new_password']))
+		{
+			$new_password = mysqli_real_escape_string($_POST['new_password']);
+			$re_new_password = mysqli_real_escape_string($_POST['re_new_password']);
+			if($new_password==$re_new_password)
+			{
+				$_password=$new_password;
+			}
+			else
+			{
+				echo "Two New Passwords Doesn't Match!";
+				header('Location: Edit_Patient_Profile.html');
+			}
+		}
 				
 		$query = "UPDATE patient SET name = '$name', age = '$age', sex= '$sex', district= '$district', password ='$_password'
 					WHERE email='$_SESSION[patient_email]'";

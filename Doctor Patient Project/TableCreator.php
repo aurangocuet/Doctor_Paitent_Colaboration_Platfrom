@@ -1,10 +1,12 @@
 <!-- Aurangajeb Alam Sabbir --!>
 
 <?php
-include ("Connection.php");
+//include ("Connection.php");
+require_once 'Connection.php';
 $con=Connection::getConnection();
-class TableCreator{
-	public static function createTablePatient(){
+
+	class TableCreator{
+		public static function createTablePatient(){
 		 $con=Connection::getConnection();
 		 $create_table="CREATE  TABLE IF NOT EXISTS `patient` (
  						  `name` VARCHAR(30) NOT NULL ,
