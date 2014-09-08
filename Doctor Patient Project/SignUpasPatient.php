@@ -22,7 +22,7 @@
 </div>
 <div id="apDiv2"></div>
 <div id="contact_ifo">Copy right:CUET Contact   About the    developer	</div>
-<?php
+<?php /*?><?php
 	require_once 'Connection.php';
 	
 	if(isset($_POST['name']) && isset($_POST['username']) && isset($_POST['email']) && isset($_POST['age']) && isset($_POST['sex'
@@ -131,8 +131,8 @@
 							</script>';	
 					}		
 				}
-?>
-<form action="SignUpasPatient.php" method="post">
+?><?php */?>
+<form action="SignUpasPatient_action.php" method="post" enctype="multipart/form-data">
 	<table border="0">
         	        
             <tr>
@@ -150,7 +150,7 @@
             
             <tr>
             	<td>Image</td>
-   				<td><input type="file" name="file" id="photo" class="file_upload" onClick="imageDown();" onChange="readURL(this,'img_prev_Photo');" required></td>
+   				<td><input type="file" name="photo" id="photo" class="file_upload" onClick="imageDown();" onChange="readURL(this,'img_prev_Photo');" required></td>
             </tr>
             <tr>
                 <td></td>
@@ -197,7 +197,7 @@
             	<td>
                 </td>
                 <td>
-                  	<input type="submit" value="submit" class="button">
+                  	<input type="submit" name="submit" value="submit" class="button">
                 </td>
             </tr>
   </table>
