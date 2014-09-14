@@ -1,0 +1,113 @@
+#label {
+	position: absolute;
+	left: 27%;
+	top: 20px;
+	width: 45%;
+	height: 193px;
+	z-index: 1;
+}
+
+hr {
+	margin-right:0%;
+	alignment-adjust:baseline;
+	alignment-baseline:central;
+	margin-left:0%;
+	width:82%;
+}
+
+#contact_ifo {
+	position: absolute;
+	left: 26%;
+	top: 820px;
+	width: 40%;
+	height: 88px;
+	z-index: 4;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: rgba(51,51,51,1);
+	text-align: right;
+	color: rgba(0,153,255,1);
+}
+#logdoctor {
+	position: absolute;
+	left: 28%;
+	top: 290px;
+	width: 15%;
+	height: 178px;
+	z-index: 5;
+	text-align: center;
+	color: #FF8F59;
+	background-color: rgb(150,200,200);
+	border-radius: 17px;
+	text-shadow: #282828;
+	padding-bottom: 13px;
+}
+#logpatient {
+	position: absolute;
+	top: 294px;
+	width: 15%;
+	z-index: 5;
+	text-align: center;
+	color: #FF8F59;
+	background-color: rgb(150,200,200);
+	border-radius: 16px;
+	text-shadow: #282828;
+	padding-bottom: 13px;
+	height: 178px;
+	left: 48%;
+	
+}
+h1 {
+	font-size: 32px;
+	color: #000040;
+}
+#apDiv3 {
+	position: absolute;
+	left: 41%;
+	top: 540px;
+	width: 12%;
+	height: 45px;
+	z-index: 5;
+}
+#submitto {
+	position: absolute;
+	left: 25%;
+	top: 610px;
+	width: 14%;
+	height: 171px;
+	z-index: 6;
+	padding-left:17px;
+	padding-bottom:17px;
+}
+    h5 {
+	font-size: 14px;
+}
+    h4 {
+	font-size: 17px;
+}
+#submitby {
+	position: absolute;
+	left: 46%;
+	top: 609px;
+	width: 20%;
+	height: 171px;
+	z-index: 6;
+	padding-right:17px;
+	padding-bottom:17px;
+	text-align:right;
+}
+a:link {
+    color: #004040;
+    text-decoration: none;
+}
+a:visited {
+    color: #004040;
+    text-decoration: none;
+}
+a:hover {
+    color: #00FFFF;
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}

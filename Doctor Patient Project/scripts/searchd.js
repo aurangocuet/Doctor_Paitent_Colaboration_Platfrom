@@ -125,6 +125,18 @@ $(window).load(function (e) {
     }).blur(function () {
         $('.help').animate({right: -200}, 500);
     });
+	$('#Achived_Degree').focusin(function () {
+        $('.help').animate({right: 0}, 500);
+        $('.help').text('Type Your Degrees');
+    }).blur(function () {
+        $('.help').animate({right: -200}, 500);
+    });
+	$('#specialist_in').focusin(function () {
+        $('.help').animate({right: 0}, 500);
+        $('.help').text('In Which You Specialist');
+    }).blur(function () {
+        $('.help').animate({right: -200}, 500);
+    });
 
     //for password
     $('#password').focusin(function () {

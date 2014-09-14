@@ -6,15 +6,16 @@
 -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>SignUp as Patient</title>
-    <link href="stylesheet/SignUpasPaitent.css" rel="stylesheet" type="text/css">
+    <title>SignUp as Doctor</title>
+    <link href="stylesheet/SignUpasDoctor.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="scripts/effects.js"></script>
     <script type="text/javascript" src="scripts/photo.js"></script>
-    <script type="text/javascript" src="scripts/search.js"></script>
+    <script type="text/javascript" src="scripts/searchd.js"></script>
 </head>
 
 <body bgcolor="#FFFFFF">
+<div class="help"></div>
 <div id="label">
     <img src="image/logo3.png" alt="LOGO" width="500" height="193" align="middle"/>
     <hr>
@@ -23,8 +24,8 @@
     <div class="notifytext"></div>
     <div class="cross">X</div>
 </div>
-<div class="help"></div>
-<form action="SignUpasPatient_action.php" method="post" enctype="multipart/form-data">
+<div id="apDiv2"></div>
+<form action="SignUpasDoctor_action.php" method="post" enctype="multipart/form-data">
     <table border="0">
 
         <tr>
@@ -81,6 +82,44 @@
             <td>Age</td>
             <td><input type="number" id="age" name="age" class="FormElement" maxlength="45" required></td>
         </tr>
+        <tr>
+            <td>Achived Degree</td>
+            <td><input type="text" id="Achived_Degree" name="achived_degree" class="FormElement" maxlength="95" required></td>
+        </tr>
+            
+        <tr>
+            	<td>Specialist In</td>
+   				<td>
+                		<select name="specialist_in"  id= "specialist_in"  maxlength="45" class="FormElement"  required>
+                        <option value="Addiction psychiatrist" selected >Addiction psychiatrist</option>
+                        <option value="Allergist (immunologist)" selected >Allergist (immunologist)</option>
+                        <option value="Anesthesiologist" selected >Anesthesiologist</option>
+                        <option value="Cardiac electrophysiologist" selected >Cardiac electrophysiologist</option>
+                        <option value="Cardiologist" selected >Cardiologist</option>
+                        <option value="Cardiovascular surgeon" selected >Cardiovascular surgeon</option>
+                        <option value="Colon and rectal surgeon" selected >Colon and rectal surgeon</option>
+                        <option value="Dermatologist" selected >Dermatologist</option>
+                        <option value="Doctor of osteopathy (DO)" selected >Doctor of osteopathy (DO)</option>
+                        <option value="Endocrinologist" selected >Endocrinologist</option>
+                        <option value="Gastroenterologist" selected >Gastroenterologist</option>
+                        <option value="Gynecologist" selected >Gynecologist</option>
+                        <option value="Madicine" selected >Madicine</option>
+                        <option value="Neonatologist" selected >Neonatologist</option>
+                        <option value="Nephrologist" selected >Nephrologist</option>
+                        <option value="Neurologist" selected >Neurologist</option>
+                        <option value="Oncologist" selected >Oncologist</option>
+                        <option value="Oral surgeon" selected >Oral surgeon</option>
+                        <option value="Orthopedic surgeon" selected >Orthopedic surgeon</option>
+                        <option value="Otolaryngologist (ear, nose, and throat specialist)" selected >Otolaryngologist (ear, nose, and throat specialist)</option>
+                        <option value="Pain management specialist" selected >Pain management specialist</option>
+                        <option value="Pathologist" selected >Pathologist</option>
+                        <option value="Phychiatrist" selected >Phychiatrist</option>
+                        <option value="Plastic surgeon" selected >Plastic surgeon</option>
+                        <option value="Surgeon" selected >Surgeon</option>
+                        <option value="--" selected >--</option>
+                    </select>
+                 </td>
+            </tr>
         <tr>
             <td>Password</td>
             <td><input type="password" id="password" name="password" class="FormElement" maxlength="45" required></td>

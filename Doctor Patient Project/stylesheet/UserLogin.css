@@ -41,7 +41,7 @@ a:active {
 }
 
 form {
-	margin-top:250px;
+	margin-top:320px;
 	margin-left:26%;
 	margin-right:26%;
 	width:500px;
@@ -56,6 +56,7 @@ form {
 	 border-radius:10px;
 	
 }
+
 
 table {
 	width:500px;
@@ -144,18 +145,10 @@ hr {
 	height: 23px;
 	z-index: 2;
 }
-#apDiv2 {
-	position: absolute;
-	left: 80px;
-	top: 533px;
-	width: 0px;
-	height: 8px;
-	z-index: 2;
-}
 #apDiv3 {
 	position: absolute;
 	left: 45%;
-	top: 566px;
+	top: 636px;
 	width: 10%;
 	height: 31px;
 	z-index: 3;
@@ -163,7 +156,7 @@ hr {
 #footer {
 	position: absolute;
 	left: 26%;
-	top: 653px;
+	top: 723px;
 	width: 40%;
 	height: 88px;
 	z-index: 4;
@@ -179,4 +172,13 @@ hr {
 }
 .contact{
 	padding-left:40px;
+}
+#header {
+	position: absolute;
+	left: 34%;
+	top: 235px;
+	width: 40%;
+	height: 59px;
+	z-index: 5;
+	color:rgba(0,66,66,1);
 }

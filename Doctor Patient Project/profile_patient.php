@@ -26,7 +26,7 @@ session_start();
   <ul id="navigationpanel" class="MenuBarHorizontal">
     <li><a href="hme.php">Home</a></li>
     <li><a href="#">Find a Doctor</a></li>
-    <li><a href="#">About Us</a></li>
+    <li><a href="AboutUs.html">About Us</a></li>
     <li><a href="#">Contact Us</a></li>
     <li><a href="UserLogin.html">Log Out</a></li>
   </ul>
